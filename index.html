@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List | FrontEnd Mentor</title>
+  </head>
+  <body>
+    <main
+      class="place-content-center max-w-3/4 m-auto flex max-[420px]:flex-col gap-10"
+    >
+      <div class="text mt-10">
+        <h1 class="text-4xl font-bold text-rose-950">Desserts</h1>
+        <section
+          id="postres"
+          class="grid grid-cols-3 gap-7 mt-10 max-[420px]:grid-cols-1"
+        ></section>
+      </div>
+      <div class="mt-10 bg-white rounded-lg w-80 p-5">
+        <h2 id="counter-cart" class="font-bold text-xl text-rose-700">
+          Your Cart (0)
+        </h2>
+        <div id="cart-items" class="mt-4 flex flex-col gap-2">
+          <img
+            id="empty-cart-image"
+            src="assets/images/illustration-empty-cart.svg"
+            alt="Ilustrative Pie Image"
+          />
+          <h3 id="empty-message" class="text-sm text-center text-rose-950">
+            Your added items will appear here
+          </h3>
+        </div>
+      </div>
+    </main>
+
+    <div class="mt-10 text-center text-black text-xl">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        class="text-red-900 font-bold"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="#" class="text-red-900 font-bold">Alberto Valenzuela</a>.
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
