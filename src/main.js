@@ -6,7 +6,7 @@ fetch("./data.json")
   .then((res) => res.json())
   .then((data) => {
     const cartItems = document.getElementById("cart-items"); // Contenedor donde se listan los productos del carrito
-    const container = document.getElementById("postres"); // Contenedor donde se muestran los productos
+    const postres = document.getElementById("postres"); // Contenedor donde se muestran los productos
     const counterCart = document.getElementById("counter-cart"); // Texto que muestra la cantidad total de productos en el carrito
     const emptyMessage = document.getElementById("empty-message"); // Mensaje de "carrito vacío"
     const emptyImage = document.getElementById("empty-cart-image"); // Imagen que se muestra cuando el carrito está vacío
@@ -34,7 +34,7 @@ fetch("./data.json")
           )}</p>
         </div>`;
 
-      container.appendChild(newDiv); // Agrega el postre al contenedor principal
+      postres.appendChild(newDiv); // Agrega el postre al contenedor principal
 
       const button = newDiv.querySelector(".add-cart");
       button.addEventListener("click", () => {
@@ -112,11 +112,6 @@ fetch("./data.json")
           }
         });
       });
-
-      const totalAmount = itemsArray.reduce(
-        (acc, item) => acc + item.price * item.quantity,
-        0
-      );
 
       if (itemsArray.length > 0) {
         const totalAmount = itemsArray.reduce(
